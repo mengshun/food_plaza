@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:food_plaza/core/model/MSCategoryModel.dart';
 
-class CategoryJsonParse {
+class MSCategoryJsonParse {
   static Future<List<MSCategoryModel>> getCategoryData() async {
     final jsonString = await rootBundle.loadString("assets/json/category.json");
     final result = json.decode(jsonString);
